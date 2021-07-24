@@ -1,0 +1,709 @@
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Piano</title>
+        <link href="style.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="col-lg-9">
+            <h1 style="color: white;">Keyboard Piano</h1>
+            <h3 style="color:lightgrey; margin-top: -10px;">Samrat Saxena</h3>
+            </div>
+
+            <button id="hideButton" type="button" onclick="setVisib()" class="col-lg-2" style="margin-top: 50px; margin-bottom: 10px; margin-left: 40px;">Hide Keyboard Characters</button>
+
+        <div class="piano col-lg-12">
+
+            <div class="key white" id="keyC1">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteC1">Q</h1>
+              </div>
+              
+              <div class="key black" id="keyCm1">
+                <br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteCm1">2</h1>
+              </div>
+              
+              <div class="key white" id="keyD1">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteD1">W</h1>
+              </div>
+              
+              <div class="key black" id="keyDm1">
+                <br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteDm1">3</h1>
+              </div>
+              
+              <div class="key white" id="keyE1">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteE1">E</h1>
+              </div>
+              
+              <div class="key white" id="keyF1">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteF1">R</h1>
+              </div>
+              
+              <div class="key black" id="keyFm1">
+                <br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteFm1">5</h1>
+              </div>
+              
+              <div class="key white" id="keyG1">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteG1">T</h1>
+              </div>
+              
+              <div class="key black" id="keyGm1">
+                <br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteGm1">6</h1>
+              </div>
+              
+              <div class="key white" id="keyA1">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteA1">Y</h1>
+              </div>
+              
+              <div class="key black" id="keyAm1">
+                <br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteAm1">7</h1>
+              </div>
+              
+              <div class="key white" id="keyB1">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteB1">U</h1>
+              </div>
+              
+              <div class="key white" id="keyC2">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteC2">I</h1>
+              </div>
+              
+              <div class="key black" id="keyCm2">
+                <br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteCm2">A</h1>
+              </div>
+              
+              <div class="key white" id="keyD2">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteD2">Z</h1>
+              </div>
+              
+              <div class="key black" id="keyDm2">
+                <br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteDm2">S</h1>
+              </div>
+              
+              <div class="key white" id="keyE2">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteE2">X</h1>
+              </div>
+              
+              <div class="key white" id="keyF2">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteF2">C</h1>
+              </div>
+              
+              <div class="key black" id="keyFm2">
+                <br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteFm2">F</h1>
+              </div>
+              
+              <div class="key white" id="keyG2">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteG2">V</h1>
+              </div>
+              
+              <div class="key black" id="keyGm2">
+                <br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteGm2">G</h1>
+              </div>
+              
+              <div class="key white" id="keyA2">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteA2">B</h1>
+              </div>
+              
+              <div class="key black" id="keyAm2">
+                <br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteAm2">H</h1>
+              </div>
+              
+              <div class="key white" id="keyB2">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteB2">N</h1>
+              </div>
+              
+              <div class="key white" id="keyC3">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h1 class="letters" id="noteC3">M</h1>
+              
+        </div>
+        </div>
+
+        <audio id="audio1"></audio>
+        <audio id="audio2"></audio>
+        <audio id="audio3"></audio>
+        <audio id="audio4"></audio>
+        <audio id="audio5"></audio>
+        <audio id="audio6"></audio>
+        <audio id="audio7"></audio>
+        <audio id="audio8"></audio>
+        <audio id="audio9"></audio>
+        <audio id="audio10"></audio>
+        <audio id="audio11"></audio>
+        <audio id="audio12"></audio>
+        <audio id="audio13"></audio>
+        <audio id="audio14"></audio>
+        <audio id="audio15"></audio>
+        <audio id="audio16"></audio>
+        <audio id="audio17"></audio>
+        <audio id="audio18"></audio>
+        <audio id="audio19"></audio>
+        <audio id="audio20"></audio>
+        <audio id="audio21"></audio>
+        <audio id="audio22"></audio>
+        <audio id="audio23"></audio>
+        <audio id="audio24"></audio>
+        <audio id="audio25"></audio>
+
+    </body>
+
+    <script>
+
+        
+
+var audio1 = document.getElementById("audio1");
+var audio2 = document.getElementById("audio2");
+var audio3 = document.getElementById("audio3");
+var audio4 = document.getElementById("audio4");
+var audio5 = document.getElementById("audio5");
+var audio6 = document.getElementById("audio6");
+var audio7 = document.getElementById("audio7");
+var audio8 = document.getElementById("audio8");
+var audio9 = document.getElementById("audio9");
+var audio10 = document.getElementById("audio10");
+var audio11 = document.getElementById("audio11");
+var audio12 = document.getElementById("audio12");
+var audio13 = document.getElementById("audio13");
+var audio14 = document.getElementById("audio14");
+var audio15 = document.getElementById("audio15");
+var audio16 = document.getElementById("audio16");
+var audio17 = document.getElementById("audio17");
+var audio18 = document.getElementById("audio18");
+var audio19 = document.getElementById("audio19");
+var audio20 = document.getElementById("audio20");
+var audio21 = document.getElementById("audio21");
+var audio22 = document.getElementById("audio22");
+var audio23 = document.getElementById("audio23");
+var audio24 = document.getElementById("audio24");
+var audio25 = document.getElementById("audio25");
+
+window.addEventListener("keypress", playC1)
+window.addEventListener("keypress", playCm1)
+window.addEventListener("keypress", playD1)
+window.addEventListener("keypress", playDm1)
+window.addEventListener("keypress", playE1)
+window.addEventListener("keypress", playF1)
+window.addEventListener("keypress", playFm1)
+window.addEventListener("keypress", playG1)
+window.addEventListener("keypress", playGm1)
+window.addEventListener("keypress", playA1)
+window.addEventListener("keypress", playAm1)
+window.addEventListener("keypress", playB1)
+window.addEventListener("keypress", playC2)
+window.addEventListener("keypress", playCm2)
+window.addEventListener("keypress", playD2)
+window.addEventListener("keypress", playDm2)
+window.addEventListener("keypress", playE2)
+window.addEventListener("keypress", playF2)
+window.addEventListener("keypress", playFm2)
+window.addEventListener("keypress", playG2)
+window.addEventListener("keypress", playGm2)
+window.addEventListener("keypress", playA2)
+window.addEventListener("keypress", playAm2)
+window.addEventListener("keypress", playB2)
+window.addEventListener("keypress", playC3)
+
+var name_id = "";
+var noteKey = "Visible";
+
+function playC1(key){
+    if(key.keyCode == "81") {
+        audio1.src = "Notes/N1/C.wav"
+        audio1.play();
+        id_name = "keyC1"
+        document.getElementById("keyC1").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+    if(key.keyCode == "113") {
+        audio1.src = "Notes/N1/C.wav"
+        audio1.play();
+        id_name = "keyC1"
+        document.getElementById("keyC1").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+}
+
+function playCm1(key){
+    if(key.keyCode == "50") {
+        audio2.src = "Notes/N1/Cm.wav"
+        audio2.play();
+        id_name = "keyCm1"
+        document.getElementById("keyCm1").style.backgroundColor = "grey";
+        setTimeout(setBlack, 100);
+    }
+}
+
+function playD1(key){
+    if(key.keyCode == "87") {
+        audio3.src = "Notes/N1/D.wav"
+        audio3.play();
+        id_name = "keyD1"
+        document.getElementById("keyD1").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+    if(key.keyCode == "119") {
+        audio3.src = "Notes/N1/D.wav"
+        audio3.play();
+        id_name = "keyD1"
+        document.getElementById("keyD1").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+}
+
+function playDm1(key){
+    if(key.keyCode == "51") {
+        audio4.src = "Notes/N1/Dm.wav"
+        audio4.play();
+        id_name = "keyDm1"
+        document.getElementById("keyDm1").style.backgroundColor = "grey";
+        setTimeout(setBlack, 100);
+    }
+}
+
+function playE1(key){
+    if(key.keyCode == "69") {
+        audio5.src = "Notes/N1/E.wav"
+        audio5.play();
+        id_name = "keyE1"
+        document.getElementById("keyE1").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+    if(key.keyCode == "101") {
+        audio5.src = "Notes/N1/E.wav"
+        audio5.play();
+        id_name = "keyE1"
+        document.getElementById("keyE1").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+}
+
+function playF1(key){
+    if(key.keyCode == "82") {
+        audio6.src = "Notes/N1/F.wav"
+        audio6.play();
+        id_name = "keyF1"
+        document.getElementById("keyF1").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+    if(key.keyCode == "114") {
+        audio6.src = "Notes/N1/F.wav"
+        audio6.play();
+        id_name = "keyF1"
+        document.getElementById("keyF1").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+}
+
+function playFm1(key){
+    if(key.keyCode == "53") {
+        audio7.src = "Notes/N1/Fm.wav"
+        audio7.play();
+        id_name = "keyFm1"
+        document.getElementById("keyFm1").style.backgroundColor = "grey";
+        setTimeout(setBlack, 100);
+    }
+}
+
+function playG1(key){
+    if(key.keyCode == "84") {
+        audio8.src = "Notes/N1/G.wav"
+        audio8.play();
+        id_name = "keyG1"
+        document.getElementById("keyG1").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+    if(key.keyCode == "116") {
+        audio8.src = "Notes/N1/G.wav"
+        audio8.play();
+        id_name = "keyG1"
+        document.getElementById("keyG1").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+}
+
+function playGm1(key){
+    if(key.keyCode == "54") {
+        audio9.src = "Notes/N1/Gm.wav"
+        audio9.play();
+        id_name = "keyGm1"
+        document.getElementById("keyGm1").style.backgroundColor = "grey";
+        setTimeout(setBlack, 100);
+    }
+}
+
+function playA1(key){
+    if(key.keyCode == "89") {
+        audio10.src = "Notes/N1/A.wav"
+        audio10.play();
+        id_name = "keyA1"
+        document.getElementById("keyA1").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+    if(key.keyCode == "121") {
+        audio10.src = "Notes/N1/A.wav"
+        audio10.play();
+        id_name = "keyA1"
+        document.getElementById("keyA1").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+}
+
+function playAm1(key){
+    if(key.keyCode == "55") {
+        audio11.src = "Notes/N1/Am.wav"
+        audio11.play();
+        id_name = "keyAm1"
+        document.getElementById("keyAm1").style.backgroundColor = "grey";
+        setTimeout(setBlack, 100);
+    }
+}
+
+function playB1(key){
+    if(key.keyCode == "85") {
+        audio12.src = "Notes/N1/B.wav"
+        audio12.play();
+        id_name = "keyB1"
+        document.getElementById("keyB1").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+    if(key.keyCode == "117") {
+        audio12.src = "Notes/N1/B.wav"
+        audio12.play();
+        id_name = "keyB1"
+        document.getElementById("keyB1").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+}
+
+function playC2(key){
+    if(key.keyCode == "73") {
+        audio13.src = "Notes/N2/C.wav"
+        audio13.play();
+        id_name = "keyC2"
+        document.getElementById("keyC2").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+    if(key.keyCode == "105") {
+        audio13.src = "Notes/N2/C.wav"
+        audio13.play();
+        id_name = "keyC2"
+        document.getElementById("keyC2").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+}
+
+function playCm2(key){
+    if(key.keyCode == "65") {
+        audio14.src = "Notes/N2/Cm.wav"
+        audio14.play();
+        id_name = "keyCm2"
+        document.getElementById("keyCm2").style.backgroundColor = "grey";
+        setTimeout(setBlack, 100);
+    }
+    if(key.keyCode == "97") {
+        audio14.src = "Notes/N2/Cm.wav"
+        audio14.play();
+        id_name = "keyCm2"
+        document.getElementById("keyCm2").style.backgroundColor = "grey";
+        setTimeout(setBlack, 100);
+    }
+}
+
+function playD2(key){
+    if(key.keyCode == "90") {
+        audio15.src = "Notes/N2/D.wav"
+        audio15.play();
+        id_name = "keyD2"
+        document.getElementById("keyD2").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+        
+    }
+    if(key.keyCode == "122") {
+        audio15.src = "Notes/N2/D.wav"
+        audio15.play();
+        id_name = "keyD2"
+        document.getElementById("keyD2").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+}
+
+function playDm2(key){
+    if(key.keyCode == "83") {
+        audio16.src = "Notes/N2/Dm.wav"
+        audio16.play();
+        id_name = "keyDm2"
+        document.getElementById("keyDm2").style.backgroundColor = "grey";
+        setTimeout(setBlack, 100);
+    }
+    if(key.keyCode == "115") {
+        audio16.src = "Notes/N2/Dm.wav"
+        audio16.play();
+        id_name = "keyDm2"
+        document.getElementById("keyDm2").style.backgroundColor = "grey";
+        setTimeout(setBlack, 100);
+    }
+}
+
+function playE2(key){
+    if(key.keyCode == "88") {
+        audio17.src = "Notes/N2/E.wav"
+        audio17.play();
+        id_name = "keyE2"
+        document.getElementById("keyE2").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+    if(key.keyCode == "120") {
+        audio17.src = "Notes/N2/E.wav"
+        audio17.play();
+        id_name = "keyE2"
+        document.getElementById("keyE2").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+}
+
+function playF2(key){
+    if(key.keyCode == "67") {
+        audio18.src = "Notes/N2/F.wav"
+        audio18.play();
+        id_name = "keyF2"
+        document.getElementById("keyF2").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+    if(key.keyCode == "99") {
+        audio18.src = "Notes/N2/F.wav"
+        audio18.play();
+        id_name = "keyF2"
+        document.getElementById("keyF2").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+}
+
+function playFm2(key){
+    if(key.keyCode == "70") {
+        audio19.src = "Notes/N2/Fm.wav"
+        audio19.play();
+        id_name = "keyFm2"
+        document.getElementById("keyFm2").style.backgroundColor = "grey";
+        setTimeout(setBlack, 100);
+    }
+    if(key.keyCode == "102") {
+        audio19.src = "Notes/N2/Fm.wav"
+        audio19.play();
+        id_name = "keyFm2"
+        document.getElementById("keyFm2").style.backgroundColor = "grey";
+        setTimeout(setBlack, 100);
+    }
+}
+
+function playG2(key){
+    if(key.keyCode == "86") {
+        audio20.src = "Notes/N2/G.wav"
+        audio20.play();
+        id_name = "keyG2"
+        document.getElementById("keyG2").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+    if(key.keyCode == "118") {
+        audio20.src = "Notes/N2/G.wav"
+        audio20.play();
+        id_name = "keyG2"
+        document.getElementById("keyG2").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+}
+
+function playGm2(key){
+    if(key.keyCode == "71") {
+        audio21.src = "Notes/N2/Gm.wav"
+        audio21.play();
+        id_name = "keyGm2"
+        document.getElementById("keyGm2").style.backgroundColor = "grey";
+        setTimeout(setBlack, 100);
+    }
+    if(key.keyCode == "103") {
+        audio21.src = "Notes/N2/Gm.wav"
+        audio21.play();
+        id_name = "keyGm2"
+        document.getElementById("keyGm2").style.backgroundColor = "grey";
+        setTimeout(setBlack, 100);
+    }
+}
+
+function playA2(key){
+    if(key.keyCode == "66") {
+        audio22.src = "Notes/N2/A.wav"
+        audio22.play();
+        id_name = "keyA2"
+        document.getElementById("keyA2").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+    if(key.keyCode == "98") {
+        audio22.src = "Notes/N2/A.wav"
+        audio22.play();
+        id_name = "keyA2"
+        document.getElementById("keyA2").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+}
+
+function playAm2(key){
+    if(key.keyCode == "72") {
+        audio23.src = "Notes/N2/Am.wav"
+        audio23.play();
+        id_name = "keyAm2"
+        document.getElementById("keyAm2").style.backgroundColor = "grey";
+        setTimeout(setBlack, 100);
+    }
+    if(key.keyCode == "104") {
+        audio23.src = "Notes/N2/Am.wav"
+        audio23.play();
+        id_name = "keyAm2"
+        document.getElementById("keyAm2").style.backgroundColor = "grey";
+        setTimeout(setBlack, 100);
+    }
+}
+
+function playB2(key){
+    if(key.keyCode == "78") {
+        audio24.src = "Notes/N2/B.wav"
+        audio24.play();
+        id_name = "keyB2"
+        document.getElementById("keyB2").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+    if(key.keyCode == "110") {
+        audio24.src = "Notes/N2/B.wav"
+        audio24.play();
+        id_name = "keyB2"
+        document.getElementById("keyB2").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+}
+
+function playC3(key){
+    if(key.keyCode == "77") {
+        audio25.src = "Notes/C.wav"
+        audio25.play();
+        id_name = "keyC3"
+        document.getElementById("keyC3").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+    if(key.keyCode == "109") {
+        audio25.src = "Notes/C.wav"
+        audio25.play();
+        id_name = "keyC3"
+        document.getElementById("keyC3").style.backgroundColor = "grey";
+        setTimeout(setWhite, 100);
+    }
+}
+
+function setWhite() {
+    document.getElementById(id_name).style.backgroundColor = "white";    
+}
+
+function setBlack() {
+    document.getElementById(id_name).style.backgroundColor = "black";    
+}
+
+function setVisib() {
+
+    if(noteKey == "Visible") {
+        document.getElementById("noteC1").style.display = "none";
+        document.getElementById("noteCm1").style.display = "none";
+        document.getElementById("noteD1").style.display = "none";
+        document.getElementById("noteDm1").style.display = "none";
+        document.getElementById("noteE1").style.display = "none";
+        document.getElementById("noteF1").style.display = "none";
+        document.getElementById("noteFm1").style.display = "none";
+        document.getElementById("noteG1").style.display = "none";
+        document.getElementById("noteGm1").style.display = "none";
+        document.getElementById("noteA1").style.display = "none";
+        document.getElementById("noteAm1").style.display = "none";
+        document.getElementById("noteB1").style.display = "none";
+        document.getElementById("noteC2").style.display = "none";
+        document.getElementById("noteCm2").style.display = "none";
+        document.getElementById("noteD2").style.display = "none";
+        document.getElementById("noteDm2").style.display = "none";
+        document.getElementById("noteE2").style.display = "none";
+        document.getElementById("noteF2").style.display = "none";
+        document.getElementById("noteFm2").style.display = "none";
+        document.getElementById("noteG2").style.display = "none";
+        document.getElementById("noteGm2").style.display = "none";
+        document.getElementById("noteA2").style.display = "none";
+        document.getElementById("noteAm2").style.display = "none";
+        document.getElementById("noteB2").style.display = "none";
+        document.getElementById("noteC3").style.display = "none";
+        noteKey = "Hidden"
+        document.getElementById("hideButton").innerHTML = "Show Keyboard Characters"
+    } else {
+        document.getElementById("noteC1").style.display = "inline-block";
+        document.getElementById("noteCm1").style.display = "inline-block";
+        document.getElementById("noteD1").style.display = "inline-block";
+        document.getElementById("noteDm1").style.display = "inline-block";
+        document.getElementById("noteE1").style.display = "inline-block";
+        document.getElementById("noteF1").style.display = "inline-block";
+        document.getElementById("noteFm1").style.display = "inline-block";
+        document.getElementById("noteG1").style.display = "inline-block";
+        document.getElementById("noteGm1").style.display = "inline-block";
+        document.getElementById("noteA1").style.display = "inline-block";
+        document.getElementById("noteAm1").style.display = "inline-block";
+        document.getElementById("noteB1").style.display = "inline-block";
+        document.getElementById("noteC2").style.display = "inline-block";
+        document.getElementById("noteCm2").style.display = "inline-block";
+        document.getElementById("noteD2").style.display = "inline-block";
+        document.getElementById("noteDm2").style.display = "inline-block";
+        document.getElementById("noteE2").style.display = "inline-block";
+        document.getElementById("noteF2").style.display = "inline-block";
+        document.getElementById("noteFm2").style.display = "inline-block";
+        document.getElementById("noteG2").style.display = "inline-block";
+        document.getElementById("noteGm2").style.display = "inline-block";
+        document.getElementById("noteA2").style.display = "inline-block";
+        document.getElementById("noteAm2").style.display = "inline-block";
+        document.getElementById("noteB2").style.display = "inline-block";
+        document.getElementById("noteC3").style.display = "inline-block";
+        noteKey = "Visible"
+        document.getElementById("hideButton").innerHTML = "Hide Keyboard Characters"
+
+    }
+
+}
+
+    </script>
+
+</html>
